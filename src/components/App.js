@@ -11,8 +11,8 @@ function App() {
   return (
     <div>
       <NavBar />
-      <Home />
-      <About />
+      <Home user={user}/>
+      <About bio={user.bio} github={user.github} linkedin={user.linkedin}/>
     </div>
   );
 }
